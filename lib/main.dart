@@ -6,11 +6,11 @@ import 'package:bookly_app/constatnts.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const bookly_app());
+  runApp(const BooklyApp());
 }
 
-class bookly_app extends StatelessWidget {
-  const bookly_app({super.key});
+class BooklyApp extends StatelessWidget {
+  const BooklyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
