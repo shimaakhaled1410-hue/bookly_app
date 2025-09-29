@@ -9,10 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: HomeViewBody(),
-<<<<<<< HEAD
-      
-=======
->>>>>>> 371c90405b49b49b6b7d248525a8d0a6c239b994
+
     );
   }
 }
