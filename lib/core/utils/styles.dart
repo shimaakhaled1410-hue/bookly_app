@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 
 abstract class Styles {
   static const titleMediam = TextStyle(
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: FontWeight.w600,
   );
 }
