@@ -11,14 +11,14 @@ abstract class HomeLocalDataSource {
 class HomeLocalDataSourceImpl extends HomeLocalDataSource {
   @override
   List<BookEntity> fetchFeaturedBooks() {
-
-    
     var box = Hive.box<BookEntity>(kFeaturedBox);
     return box.values.toList();
   }
 
   @override
   List<BookEntity> fetchNewestBooks() {
-    throw UnimplementedError();
+    var box = Hive.box<BookEntity>(kNewestdBox);
+    return box.values.toList();
+    
   }
 }
