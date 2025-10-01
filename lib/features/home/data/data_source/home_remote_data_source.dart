@@ -2,7 +2,6 @@ import 'package:bookly_app/constatnts.dart';
 import 'package:bookly_app/core/utils/api_service.dart';
 import 'package:bookly_app/core/utils/functions/save_books.dart';
 import 'package:bookly_app/features/home/data/models/book_model/item.dart';
-import 'package:hive/hive.dart';
 
 import '../../domain/entities/book_entity.dart';
 
@@ -33,6 +32,8 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
   Future<List<BookEntity>> fetchNewestBooks() async {
     var data = await apiService.get(endPoint: 'volumes?q=api');
     List<BookEntity> books = getBooksList(data);
+    saveBooksData(books,kNewestdBox);
+
     return books;
   }
 
